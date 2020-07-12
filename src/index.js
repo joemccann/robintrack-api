@@ -15,7 +15,9 @@ const METHODS = {
 
 // largest popularity increases
 const normalizeOptions = (method, options = {}) => {
-  if (method === 'largest_popularity_increases') {
+  if (method === 'largest_popularity_increases' ||
+  method === 'largest_popularity_decreases' ||
+  method === 'largest_popularity_changes') {
     //
     // hours_ago is required
     //
@@ -23,8 +25,8 @@ const normalizeOptions = (method, options = {}) => {
       hours_ago: hoursAgo = ''
     } = options
     if (!hoursAgo) throw new Error('Missing required parameter "hours_ago"')
-    return qs.stringify(options)
   }
+  return qs.stringify(options)
 }
 
 module.exports = async (params = {}) => {
