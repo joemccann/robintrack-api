@@ -25,15 +25,15 @@ const params = {
 }
 
 try {
-	const {
-		data = [],
-		statusCode = 0
-	} = await rta(params)
-	console.dir(data) // [...]
-	console.log(statusCode) // 200
+  const {
+    data = [],
+    statusCode = 0
+  } = await rta(params)
+  console.dir(data) // [...]
+  console.log(statusCode) // 200
 }
 catch(e){
-	console.error(e)
+  console.error(e)
 }
 ```
 
