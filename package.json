@@ -1,7 +1,7 @@
 {
 	"name": "@joemccann/robintrack-api",
 	"version": "1.0.0",
-	"description": "Unofficial node client for the robintrack.net website.",
+	"description": "📈 Unofficial node client for the robintrack.net website.",
 	"main": "index.js",
 	"scripts": {
 		"pretest": "clear && standard .",

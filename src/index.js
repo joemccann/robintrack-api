@@ -1,6 +1,7 @@
 const BASE_URL = 'http://robintrack.net/api/'
 const fetch = require('node-fetch')
 const qs = require('querystring')
+
 //
 // Create an enum of active/deprecated methods
 //
@@ -30,8 +31,9 @@ const normalizeOptions = (method, options = {}) => {
 }
 
 module.exports = async (params = {}) => {
-  // http://robintrack.net/api/largest_popularity_increases?hours_ago=72&limit=50&percentage=true&min_popularity=400&start_index=0
+  //
   // Validate params
+  //
   const { method = '', options = {} } = params
 
   if (!method) throw new Error('Missing required parameter "method"')
@@ -55,7 +57,7 @@ module.exports = async (params = {}) => {
   try {
     resp = await fetch(URL)
     //
-    // Confirm it is JSON and not a direct to the HTML for the website
+    // Confirm it is JSON and not a direct to the HTML from the website
     //
     const contentType = resp.headers.get('content-type')
     if (contentType !== 'application/json; charset=utf-8') {

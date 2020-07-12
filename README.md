@@ -1,6 +1,6 @@
 # Robintrack API
 
-Unofficial node.js client for accessing the APIs called on Robintrack.net.
+📈 Unofficial node.js client for accessing the APIs called on Robintrack.net.
 
 ## Installation
 
@@ -36,6 +36,27 @@ catch(e){
   console.error(e)
 }
 ```
+
+### Supported Methods
+
+- `largest_popularity_changes`
+- `largest_popularity_decreases`
+- `largest_popularity_increases`
+- `least_popular`
+- `total_symbols`
+- `most_popular`
+
+### Support Options
+
+- `hours_ago`
+- `limit`
+- `percentage`
+- `min_popularity`
+- `start_index`
+
+NOTE: The method `total_symbols` doesn't support _any_ options.
+
+For more information on the requests and responses view the [test](test/index.js) file.
 
 ## Tests
 
