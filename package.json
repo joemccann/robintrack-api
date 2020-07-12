@@ -1,0 +1,26 @@
+{
+  "name": "robintrack-api",
+  "version": "1.0.0",
+  "description": "Unofficial node client for the robintrack.net website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/joemccann/robintrack-api"
+  },
+  "keywords": [
+    "robintrack",
+    "robinhood"
+  ],
+  "author": "Joe McCann",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^14.3.4",
+    "tape": "^5.0.1"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
