@@ -88,7 +88,6 @@ test('PASS: least popular - with options', async t => {
     t.ok(false)
   }
 })
-/*
 
 test('PASS: largest popularity changes - default', async t => {
   try {
@@ -281,4 +280,3 @@ test('FAIL: largest popularity increases - with options', async t => {
     t.ok(true)
   }
 })
-*/
